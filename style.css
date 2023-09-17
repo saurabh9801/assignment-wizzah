@@ -1,0 +1,87 @@
+/* Common styles for product containers */
+.svg-input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.search-box input{
+    width: 30rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 5px;
+    
+  }
+.product-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-badge {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.product-variants {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.variant {
+    margin: 2px 0;
+}
+
+/* List View Styles */
+.list-view {
+    width: 100%;
+}
+
+/* Grid View Styles */
+.grid-view {
+    width: 45%; /* Adjust the width as needed for your layout */
+    
+}
+
+/* Create a two-column grid */
+.grid-view:nth-child(odd) {
+    margin-right: 5%;
+}
+
+/* Clear the margin on every third element to maintain the two-column layout */
+.grid-view:nth-child(2n+1) {
+    margin-right: 0;
+}
+.variant.hidden {
+    display: none;
+}
+.highlight {
+    background-color: green;
+    color: white; /* Optional, to change text color */
+}
+
+/* Add this to your CSS */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+/* Add other CSS styles for your product cards here */
+.title_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
